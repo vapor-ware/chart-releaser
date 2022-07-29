@@ -7,11 +7,11 @@ import (
 
 	"github.com/apex/log"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/edaniszewski/chart-releaser/pkg/client"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/client"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/utils"
 )
 
 // Errors for the publish stage.

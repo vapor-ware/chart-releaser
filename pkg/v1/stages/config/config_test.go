@@ -3,11 +3,11 @@ package config
 import (
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/internal/testutils"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1/cfg"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/internal/testutils"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1/cfg"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -79,7 +79,7 @@ func TestStage_Run(t *testing.T) {
 
 	// Release
 	assert.Equal(t, "Bump {{ .Chart.Name }} Chart from {{ .Chart.PreviousVersion }} to {{ .Chart.NewVersion }}", context.Release.PRTitle)
-	assert.Equal(t, "Bumps the {{ .Chart.Name }} Helm Chart from {{ .Chart.PreviousVersion }} to {{ .Chart.NewVersion }}.\n\n{{ if .Files }}The following files have also been updated:\n{{ range .Files }}- {{ .Path }}\n{{ end }}{{ end }}\n---\n*This PR was generated with [chart-releaser](https://github.com/edaniszewski/chart-releaser)*\n", context.Release.PRBody)
+	assert.Equal(t, "Bumps the {{ .Chart.Name }} Helm Chart from {{ .Chart.PreviousVersion }} to {{ .Chart.NewVersion }}.\n\n{{ if .Files }}The following files have also been updated:\n{{ range .Files }}- {{ .Path }}\n{{ end }}{{ end }}\n---\n*This PR was generated with [chart-releaser](https://github.com/vapor-ware/chart-releaser)*\n", context.Release.PRBody)
 	assert.Equal(t, "[{{ .Chart.Name }}] bump chart to {{ .Chart.NewVersion }} for new application release ({{ .App.NewVersion }})", context.Release.ChartCommitMsg)
 
 	// Other

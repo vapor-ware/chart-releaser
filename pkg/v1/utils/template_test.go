@@ -3,8 +3,8 @@ package utils
 import (
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
 	"github.com/stretchr/testify/assert"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 func Test_RenderTemplate(t *testing.T) {
@@ -23,7 +23,7 @@ func Test_RenderTemplateParseError(t *testing.T) {
 	}
 
 	rendered, err := RenderTemplate(context, "test-tmpl", "{{")
-	assert.EqualError(t, err, "template: test-tmpl:1: unexpected unclosed action in command")
+	assert.EqualError(t, err, "template: test-tmpl:1: unclosed action")
 	assert.Equal(t, "", rendered)
 }
 

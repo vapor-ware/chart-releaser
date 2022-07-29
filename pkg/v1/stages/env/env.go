@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/env"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/env"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // Errors for the env stage.

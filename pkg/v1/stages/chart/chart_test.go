@@ -5,9 +5,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/internal/testutils"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/internal/testutils"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 	"github.com/stretchr/testify/assert"
 )
 

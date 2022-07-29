@@ -2,9 +2,9 @@ package git
 
 import (
 	"github.com/apex/log"
-	version "github.com/edaniszewski/chart-releaser/pkg/semver"
-	"github.com/edaniszewski/chart-releaser/pkg/utils"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	version "github.com/vapor-ware/chart-releaser/pkg/semver"
+	"github.com/vapor-ware/chart-releaser/pkg/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // Stage for the "git" step of the update pipeline.

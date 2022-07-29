@@ -9,7 +9,7 @@ Chart to update the appVersion and Chart version.
 
 > **Note**: This tool is still in its infancy so there may be bugs, missing features,
 > non-ergonomic defaults, etc. If you have any questions, notice any issues, or have
-> suggestions for improvement, [open an issue](https://github.com/edaniszewski/chart-releaser/issues)
+> suggestions for improvement, [open an issue](https://github.com/vapor-ware/chart-releaser/issues)
 > or open a PR - all contributions are welcome.
 
 ## Getting Started
@@ -18,26 +18,8 @@ Chart to update the appVersion and Chart version.
 
 #### Latest
 
-The latest release is available from the [releases](https://github.com/edaniszewski/chart-releaser/releases)
+The latest release is available from the [releases](https://github.com/vapor-ware/chart-releaser/releases)
 page. All tags generate a release with pre-compiled binaries attached as assets.
-
-#### Docker
-
-A lightweight Docker image is also available:
-
-```
-docker pull chartreleaser/chart-releaser
-``` 
-
-#### Homebrew
-
-macOS users can also install via [Homebrew](https://brew.sh/) by first adding the tap,
-then installing the package.
-
-```
-brew tap edaniszewski/tap
-brew install chart-releaser
-```
 
 ### Running
 

@@ -12,11 +12,11 @@ import (
 
 	"github.com/apex/log"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/edaniszewski/chart-releaser/pkg/client"
-	"github.com/edaniszewski/chart-releaser/pkg/errs"
-	version "github.com/edaniszewski/chart-releaser/pkg/semver"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1/cfg"
+	"github.com/vapor-ware/chart-releaser/pkg/client"
+	"github.com/vapor-ware/chart-releaser/pkg/errs"
+	version "github.com/vapor-ware/chart-releaser/pkg/semver"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1/cfg"
 	"github.com/fatih/color"
 	"github.com/mgutz/ansi"
 )

@@ -7,8 +7,8 @@ import (
 	"text/template"
 
 	"github.com/MakeNowJust/heredoc"
-	"github.com/edaniszewski/chart-releaser/pkg"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
+	"github.com/vapor-ware/chart-releaser/pkg"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
 	"github.com/spf13/cobra"
 	"github.com/tcnksm/go-latest"
 )

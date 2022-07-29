@@ -1,8 +1,8 @@
 package render
 
 import (
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/utils"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/utils"
 )
 
 // Stage for the "render" step of the update pipeline.

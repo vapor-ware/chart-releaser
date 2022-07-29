@@ -11,7 +11,7 @@ GIT_TAG     ?= $(shell git describe --tags 2> /dev/null || true)
 BUILD_DATE  := $(shell date -u +%Y-%m-%dT%T 2> /dev/null)
 GO_VERSION  := $(shell go version | awk '{ print $$3 }')
 
-PKG_CTX := github.com/edaniszewski/chart-releaser/pkg
+PKG_CTX := github.com/vapor-ware/chart-releaser/pkg
 LDFLAGS := -w \
 	-X ${PKG_CTX}.BuildDate=${BUILD_DATE} \
 	-X ${PKG_CTX}.Commit=${GIT_COMMIT} \

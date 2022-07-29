@@ -6,11 +6,11 @@ import (
 
 	"github.com/apex/log"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1/cfg"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/stages/env"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1/cfg"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/stages/env"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/utils"
 	"sigs.k8s.io/yaml"
 )
 

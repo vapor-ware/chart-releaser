@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/MakeNowJust/heredoc"
-	"github.com/edaniszewski/chart-releaser/pkg/config"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1"
+	"github.com/vapor-ware/chart-releaser/pkg/config"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1"
 	"github.com/spf13/cobra"
 )
 

@@ -7,8 +7,8 @@ import (
 	"text/template"
 
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/client"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/client"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // Stage for the "extras" step of the update pipeline.

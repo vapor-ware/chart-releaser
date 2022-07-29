@@ -5,12 +5,12 @@ import (
 	"testing"
 
 	"github.com/MakeNowJust/heredoc"
-	"github.com/edaniszewski/chart-releaser/internal/testutils"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
+	"github.com/vapor-ware/chart-releaser/internal/testutils"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 func TestStage_Name(t *testing.T) {
@@ -141,7 +141,7 @@ func TestStage_Run_StrategyPRDefaultTemplates(t *testing.T) {
 		- extra/file/2.txt
 		
 		---
-		*This PR was generated with [chart-releaser](https://github.com/edaniszewski/chart-releaser)*
+		*This PR was generated with [chart-releaser](https://github.com/vapor-ware/chart-releaser)*
 `,
 	), context.Release.PRBody)
 }
@@ -529,7 +529,7 @@ func Test_PublishPullRequestParseTitleError(t *testing.T) {
 	}
 
 	err := publishPullRequest(&context)
-	assert.EqualError(t, err, "template: :1: unexpected unclosed action in command")
+	assert.EqualError(t, err, "template: :1: unclosed action")
 }
 
 func Test_PublishPullRequestExecuteTitleError(t *testing.T) {
@@ -581,7 +581,7 @@ func Test_PublishPullRequestParseBodyError(t *testing.T) {
 	}
 
 	err := publishPullRequest(&context)
-	assert.EqualError(t, err, "template: :1: unexpected unclosed action in command")
+	assert.EqualError(t, err, "template: :1: unclosed action")
 }
 
 func Test_PublishPullRequestExecuteBodyError(t *testing.T) {

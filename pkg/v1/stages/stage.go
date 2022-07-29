@@ -3,7 +3,7 @@ package stages
 import (
 	"fmt"
 
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // V1Stage defines an interface for all stages of a pipeline

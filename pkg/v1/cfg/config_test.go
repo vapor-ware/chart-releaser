@@ -3,7 +3,7 @@ package v1
 import (
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/pkg/errs"
+	"github.com/vapor-ware/chart-releaser/pkg/errs"
 	"github.com/stretchr/testify/assert"
 )
 

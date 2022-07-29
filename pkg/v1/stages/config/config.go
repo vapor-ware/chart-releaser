@@ -5,11 +5,11 @@ import (
 	"regexp"
 
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	u "github.com/edaniszewski/chart-releaser/pkg/utils"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	u "github.com/vapor-ware/chart-releaser/pkg/utils"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/utils"
 )
 
 // Stage for the "config" step of the update pipeline.

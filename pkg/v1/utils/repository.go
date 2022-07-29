@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // ParseRepository parses a full repository string into its constituent parts.

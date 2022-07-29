@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/utils"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 	"github.com/mgutz/ansi"
 )
 

@@ -3,7 +3,7 @@ package testutils
 import (
 	"testing"
 
-	version "github.com/edaniszewski/chart-releaser/pkg/semver"
+	version "github.com/vapor-ware/chart-releaser/pkg/semver"
 )
 
 // NewSemver is a test utility to create a new SemVer from a string.

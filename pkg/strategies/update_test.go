@@ -3,8 +3,8 @@ package strategies
 import (
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/internal/testutils"
-	version "github.com/edaniszewski/chart-releaser/pkg/semver"
+	"github.com/vapor-ware/chart-releaser/internal/testutils"
+	version "github.com/vapor-ware/chart-releaser/pkg/semver"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/edaniszewski/chart-releaser/pkg/errs"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1/cfg"
+	"github.com/vapor-ware/chart-releaser/pkg/errs"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1/cfg"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

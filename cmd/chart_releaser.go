@@ -5,7 +5,7 @@ import (
 
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/cli"
-	"github.com/edaniszewski/chart-releaser/pkg/cmd"
+	"github.com/vapor-ware/chart-releaser/pkg/cmd"
 )
 
 func main() {

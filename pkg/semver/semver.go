@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/apex/log"
-	"github.com/blang/semver"
+	"github.com/blang/semver/v4"
 )
 
 // Errors for operations on semantic versions.

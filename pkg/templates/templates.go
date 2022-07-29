@@ -42,7 +42,7 @@ var ConfigFileTemplate = heredoc.Doc(`
 var ConfigHeaderComment = heredoc.Doc(`
 	# .chartreleaser.yaml is the configuration file for chart-releaser, a CI tool
 	# to update Helm Charts on application release. See the documentation at
-	# https://github.com/edaniszewski/chart-releaser
+	# https://github.com/vapor-ware/chart-releaser
 `)
 
 // DefaultUpdateCommitMessage is the default template for a commit message used when
@@ -72,7 +72,7 @@ var DefaultPullRequestBody = heredoc.Doc(`
 	{{ range .Files }}- {{ .Path }}
 	{{ end }}{{ end }}
 	---
-	*This PR was generated with [chart-releaser](https://github.com/edaniszewski/chart-releaser)*
+	*This PR was generated with [chart-releaser](https://github.com/vapor-ware/chart-releaser)*
 `)
 
 // DefaultBranchName is a template specifying the default name of the branch to create

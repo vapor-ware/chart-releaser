@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/apex/log"
-	version "github.com/edaniszewski/chart-releaser/pkg/semver"
+	version "github.com/vapor-ware/chart-releaser/pkg/semver"
 )
 
 // Errors relating to updating release versions.

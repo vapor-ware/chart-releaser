@@ -10,9 +10,9 @@ import (
 
 	"github.com/MakeNowJust/heredoc"
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/config"
-	"github.com/edaniszewski/chart-releaser/pkg/templates"
-	"github.com/edaniszewski/chart-releaser/pkg/utils"
+	"github.com/vapor-ware/chart-releaser/pkg/config"
+	"github.com/vapor-ware/chart-releaser/pkg/templates"
+	"github.com/vapor-ware/chart-releaser/pkg/utils"
 	"github.com/spf13/cobra"
 )
 

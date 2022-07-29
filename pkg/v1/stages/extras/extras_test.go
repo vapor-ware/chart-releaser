@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/internal/testutils"
-	v1 "github.com/edaniszewski/chart-releaser/pkg/v1/cfg"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/internal/testutils"
+	v1 "github.com/vapor-ware/chart-releaser/pkg/v1/cfg"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 	"github.com/stretchr/testify/assert"
 )
 

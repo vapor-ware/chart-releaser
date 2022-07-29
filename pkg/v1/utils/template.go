@@ -6,7 +6,7 @@ import (
 	"text/template"
 
 	"github.com/apex/log"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // RenderTemplate is a convenience method to render a template, handing the case

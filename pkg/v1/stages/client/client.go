@@ -4,8 +4,8 @@ import (
 	"errors"
 
 	"github.com/apex/log"
-	"github.com/edaniszewski/chart-releaser/pkg/client"
-	context "github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/client"
+	context "github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 )
 
 // Errors for the client stage.

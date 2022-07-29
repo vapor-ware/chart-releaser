@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/edaniszewski/chart-releaser/pkg/errs"
-	"github.com/edaniszewski/chart-releaser/pkg/strategies"
+	"github.com/vapor-ware/chart-releaser/pkg/errs"
+	"github.com/vapor-ware/chart-releaser/pkg/strategies"
 	"sigs.k8s.io/yaml"
 )
 

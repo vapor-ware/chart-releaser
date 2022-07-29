@@ -3,7 +3,7 @@ package testutils
 import (
 	"context"
 
-	"github.com/edaniszewski/chart-releaser/pkg/client"
+	"github.com/vapor-ware/chart-releaser/pkg/client"
 )
 
 // FakeClient implements the Client interface. It is used for testing.

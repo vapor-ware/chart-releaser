@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/edaniszewski/chart-releaser/pkg/env"
-	"github.com/edaniszewski/chart-releaser/pkg/v1/ctx"
+	"github.com/vapor-ware/chart-releaser/pkg/env"
+	"github.com/vapor-ware/chart-releaser/pkg/v1/ctx"
 	"github.com/stretchr/testify/assert"
 )
 
