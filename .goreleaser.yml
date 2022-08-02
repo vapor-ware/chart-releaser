@@ -13,14 +13,14 @@ changelog:
       - Merge branch
 release:
   github:
-    owner: edaniszewski
+    owner: vapor-ware
     name: chart-releaser
   draft: false
   prerelease: auto
   name_template: '{{ .Version }}'
 before:
   hooks:
-    - go mod download
+    - go mod tidy
 builds:
   -
     main: ./cmd/chart_releaser.go
@@ -29,11 +29,10 @@ builds:
       - CGO_ENABLED=0
     ldflags:
       - -w
-      - -X github.com/edaniszewski/chart-releaser/pkg.BuildDate={{ .Date }}
-      - -X github.com/edaniszewski/chart-releaser/pkg.Commit={{ .ShortCommit }}
-      - -X github.com/edaniszewski/chart-releaser/pkg.Tag={{ .Tag }}
-      - -X github.com/edaniszewski/chart-releaser/pkg.GoVersion={{ .Env.GO_VERSION }}
-      - -X github.com/edaniszewski/chart-releaser/pkg.Version={{ .Version }}
+      - -X pkg.BuildDate={{ .Date }}
+      - -X pkg.Commit={{ .ShortCommit }}
+      - -X pkg.Tag={{ .Tag }}
+      - -X pkg.Version={{ .Version }}
     goos:
       - linux
       - darwin
@@ -43,13 +42,11 @@ dockers:
   -
     goos: linux
     goarch: amd64
-    binaries:
-      - chart-releaser
     image_templates:
-      - 'chartreleaser/chart-releaser:{{ .Tag }}'
-      - 'chartreleaser/chart-releaser:{{ .Major }}'
-      - 'chartreleaser/chart-releaser:{{ .Major }}.{{ .Minor }}'
-      - 'chartreleaser/chart-releaser:latest'
+      - 'vapor-ware/chart-releaser:{{ .Tag }}'
+      - 'vapor-ware/chart-releaser:{{ .Major }}'
+      - 'vapor-ware/chart-releaser:{{ .Major }}.{{ .Minor }}'
+      - 'vapor-ware/chart-releaser:latest'
     build_flag_templates:
       - '--label=org.label-schema.version={{ .Version }}'
       - '--label=org.label-schema.build-date={{ .Date }}'
@@ -61,15 +58,3 @@ archives:
     replacements:
       darwin: darwin
       linux: linux
-brews:
-  -
-    github:
-      owner: edaniszewski
-      name: homebrew-tap
-    commit_author:
-      name: edaniszewski
-      email: 'edaniszewski@gmail.com'
-    homepage: 'https://github.com/edaniszewski/chart-releaser'
-    description: 'CI tool for automating Helm Chart version bumps on new app release'
-    test: |
-      system "#{bin}/chart-releaser version"
