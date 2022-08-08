@@ -15,6 +15,10 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 'go.mod'
+      - uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v3
