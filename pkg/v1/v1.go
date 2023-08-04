@@ -1,7 +1,7 @@
 package v1
 
 import (
-	"io/ioutil"
+	"os"
 	"time"
 
 	"github.com/apex/log"
@@ -117,7 +117,7 @@ func (f *Formatter) Run(opts FormatterOptions) error {
 		data = append(data, []byte("\n")...)
 		data = append(data, yml...)
 	}
-	return ioutil.WriteFile(opts.Path, data, 0644)
+	return os.WriteFile(opts.Path, data, 0644)
 }
 
 // Checker runs chart-releaser configuration checks.

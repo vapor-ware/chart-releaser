@@ -2,7 +2,6 @@ package config
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
@@ -35,7 +34,7 @@ func TestGetConfigPath3(t *testing.T) {
 }
 
 func TestGetConfigPath4(t *testing.T) {
-	dir, err := ioutil.TempDir("", "testdir")
+	dir, err := os.MkdirTemp("", "testdir")
 	if err != nil {
 		t.Fatal(err)
 	}
