@@ -3,17 +3,16 @@ package cmd
 import (
 	"bytes"
 	"errors"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"text/template"
 
 	"github.com/MakeNowJust/heredoc"
 	"github.com/apex/log"
+	"github.com/spf13/cobra"
 	"github.com/vapor-ware/chart-releaser/pkg/config"
 	"github.com/vapor-ware/chart-releaser/pkg/templates"
 	"github.com/vapor-ware/chart-releaser/pkg/utils"
-	"github.com/spf13/cobra"
 )
 
 type initCmd struct {
@@ -84,7 +83,7 @@ func newInitCommand() *initCmd {
 				return err
 			}
 
-			return ioutil.WriteFile(path, out.Bytes(), 0644)
+			return os.WriteFile(path, out.Bytes(), 0644)
 		},
 	}
 

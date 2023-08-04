@@ -1,7 +1,6 @@
 package config
 
 import (
-	"io/ioutil"
 	"os"
 
 	"github.com/pkg/errors"
@@ -69,7 +68,7 @@ func Load(p string) (*VersionedConfig, error) {
 	}
 
 	// Read from the file and figure out what the config version is.
-	contents, err := ioutil.ReadFile(path)
+	contents, err := os.ReadFile(path)
 	if err != nil {
 		return nil, err
 	}
